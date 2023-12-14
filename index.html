@@ -8,41 +8,114 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <script src="assets/js/script.js"></script>
    
 </head>
 
-<body>
-    <header>
-        <!-- navbar sulla sx -->
-        <!-- MOBILE: si divide in alto e in basso -->
-        <nav>
-            <div>
-                <!-- menù fisso in alto -->
-                <!-- MOBILE: fissato in basso home, cerca, libreria -->
-            </div>
-            <div>
-                <!-- lista playlist, scrollabile -->
-                <!-- MOBILE: nascosta -->
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <!-- slideshow annunci -->
-            <!-- MOBILE: nascosta -->
-        </section>
-        <section>
-            <!-- ultimi ascolti, grid 3x2 -->
-            <!-- MOBILE: grid 2x3 -->
-        </section>
-        <section>
-            <!-- consigliati, sezione che si ripete, grid 5x1 -->
-            <!-- MOBILE: playlist impilate-->
-        </section>
-        <aside>
-            <!-- attività amici, fissato sulla dx, possibilità di nasconderlo -->
-            <!-- MOBILE: nascosta -->
+<body data-bs-theme="dark">   <!-- mettere sezioni allineate con display-flex o con colonne bootstrap 
+                            PROBLEMA: sono da allineare header, main e aside MA aside è dentro main... ???
+                            
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col"> COLONNA NAVBAR</div>
+                                            <div class="col"> MAIN </div>
+                                            <div class="col"> ASIDE </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"> SEZIONE SOTTO </div>
+                                        </div>
+                                    </div>
+                        -->
+    <div id="body-container" class="container-fluid">
+        <div id="body-row" class="row">
+            <header class="col-2">
+                <!-- navbar sulla sx -->
+                <!-- MOBILE: si divide in alto e in basso -->
+                <nav>
+        
+                    <!-- menù fisso in alto -->
+                    <!-- MOBILE: fissato in basso home, cerca, libreria -->
+                    <div class="menu container">
+                        <div class="nav-down container my-3">  <!-- menu alto (visibile nel mobile) -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="index.html" class="d-flex align-items-center">
+                                        <i class="bi bi-house-door-fill fs-4"></i>
+                                        <p class="ms-3 my-0">Home</p>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="index.html" class="d-flex align-items-center">
+                                        <i class="bi bi-search fs-4"></i>
+                                        <p class="ms-3 my-0">Cerca</p>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="index.html" class="d-flex align-items-center">
+                                        <i class="bi bi-collection fs-4"></i>
+                                        <p class="ms-3 my-0">La tua libreria</p>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="personal-area container pb-3 border-bottom border-body-secondary"> <!-- menu basso (non visibile nel mobile) -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="index.html" class="d-flex align-items-center">
+                                        <i class="bi bi-plus-square-fill fs-4"></i>
+                                        <p class="ms-3 my-0">Crea playlist</p>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="index.html" class="d-flex align-items-center">
+                                        <i class="bi bi-heart-fill fs-4"></i>
+                                        <p class="ms-3 my-0">Brani che ti piacciono</p>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="index.html" class="d-flex align-items-center">
+                                        <i class="bi bi-bookmark-fill fs-4"></i>
+                                        <p class="ms-3 my-0">I tuoi episodi</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <!-- lista playlist, scrollabile -->
+                    <!-- MOBILE: nascosta -->
+                    <div class="lista-playlist container">
+                        <ul class="list-unstyled ms-2 mt-3">
+                            <li><a href="#">playlist</a></li>
+                            <li><a href="#">playlist</a></li>
+                            <li><a href="#">playlist</a></li>
+                            
+                        </ul>
+                    </div>
+        
+                </nav>
+            </header>
+            <main class="bg-success col-10">
+                <section>
+                    <!-- slideshow annunci -->
+                    <!-- MOBILE: nascosta -->
+        
+                    hellooo
+                </section>
+                <section>
+                    <!-- ultimi ascolti, grid 3x2 -->
+                    <!-- MOBILE: grid 2x3 -->
+                </section>
+                <section>
+                    <!-- consigliati, sezione che si ripete, grid 5x1 -->
+                    <!-- MOBILE: playlist impilate-->
+                </section>
+                <aside>
+                    <!-- attività amici, fissato sulla dx, possibilità di nasconderlo -->
+                    <!-- MOBILE: nascosta -->
             <div class="sidebar float-end bg-black d-none d-lg-block">
                 <div class="d-flex justify-content-between p-2">
                     <h5 class="text-light">Attività amici</h4>
@@ -95,10 +168,10 @@
 
             
             </div>
-        </aside>
-        <nav>
-            <!-- menù in basso, link ad artista, info sul brano ecc -->
-            <!-- MOBILE: fissato sopra la navbar -->
+                </aside>
+                <nav>
+                    <!-- menù in basso, link ad artista, info sul brano ecc -->
+                    <!-- MOBILE: fissato sopra la navbar -->
             <div class="position-fixed bottom-0 bg-dark w-100 p-3" data-bs-theme="'dark">
             <div class="row">
                 <div class="column col-3 d-flex p-3 align-items-center ">
@@ -142,9 +215,11 @@
                 </div>
             </div>
             </div> 
-        </nav>
-    </main>
-    
+                </nav>
+            </main>
+            
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

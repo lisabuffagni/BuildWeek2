@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["../sass/_sidebar.scss"],"names":[],"mappings":"AAAA,SACI,aACA","file":"style.min.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["../sass/_header.scss"],"names":[],"mappings":"AAAA,oCACI,YAGJ,EACI,WACA,qBAGA,OACI","file":"style.min.css"}
+>>>>>>> 6f409c7a813a0204f3533b4a17eb798b0d0f8e71
