@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify-Homepage</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
+   
 </head>
+
 <body>
     <header>
         <!-- navbar sulla sx -->
@@ -39,13 +43,109 @@
         <aside>
             <!-- attività amici, fissato sulla dx, possibilità di nasconderlo -->
             <!-- MOBILE: nascosta -->
+            <div class="sidebar float-end bg-black d-none d-lg-block">
+                <div class="d-flex justify-content-between p-2">
+                    <h5 class="text-light">Attività amici</h4>
+                        <div >
+                            <i class="bi bi-person-add text-secondary me-2"></i>
+                            <i id="FaCloseBtn" class="bi bi-x-lg text-secondary me-2"></i>
+                        </div>
+                </div>
+                <!-- "card" attività amici -->
+                <div class="d-flex p-2 position-relative mb-4">
+                    <img class="rounded-circle w-25 h-25 p-2" src="assets/imgs/search/image-1.jpeg" alt="">
+                    <div class="ms-2">
+                        <div class="text-light">Nome Utente</div>
+                        <p class="text-secondary m-0">Brano <i class="bi bi-dot text-white"></i> Artista </p>
+                        <p class="text-secondary m-0"><i class="bi bi-disc text-secondary"></i> Album</p>
+                        <div class="text-secondary position-absolute end-0 top-0 p-2">12 ore</div>
+                    </div>
+                </div>
+
+                <div class="d-flex p-2 position-relative mb-4">
+                    <img class="rounded-circle w-25 h-25 p-2" src="assets/imgs/search/image-1.jpeg" alt="">
+                    <div class="ms-2">
+                        <div class="text-light">Nome Utente</div>
+                        <p class="text-secondary m-0">Brano <i class="bi bi-dot text-white"></i> Artista </p>
+                        <p class="text-secondary m-0"><i class="bi bi-disc text-secondary"></i> Album</p>
+                        <div class="text-secondary position-absolute end-0 top-0 p-2">12 ore</div>
+                    </div>
+                </div>
+
+                <div class="d-flex p-2 position-relative mb-4">
+                    <img class="rounded-circle w-25 h-25 p-2" src="assets/imgs/search/image-1.jpeg" alt="">
+                    <div class="ms-2">
+                        <div class="text-light">Nome Utente</div>
+                        <p class="text-secondary m-0">Brano <i class="bi bi-dot text-white"></i> Artista </p>
+                        <p class="text-secondary m-0"><i class="bi bi-disc text-secondary"></i> Album</p>
+                        <div class="text-secondary position-absolute end-0 top-0 p-2">12 ore</div>
+                    </div>
+                </div>
+
+                <div class="d-flex p-2 position-relative mb-4">
+                    <img class="rounded-circle w-25 h-25 p-2" src="assets/imgs/search/image-1.jpeg" alt="">
+                    <div class="ms-2">
+                        <div class="text-light">Nome Utente</div>
+                        <p class="text-secondary m-0">Brano <i class="bi bi-dot text-white"></i> Artista </p>
+                        <p class="text-secondary m-0"><i class="bi bi-disc text-secondary"></i> Album</p>
+                        <div class="text-secondary position-absolute end-0 top-0 p-2">12 ore</div>
+                    </div>
+                </div>
+
+
+            
+            </div>
         </aside>
         <nav>
             <!-- menù in basso, link ad artista, info sul brano ecc -->
             <!-- MOBILE: fissato sopra la navbar -->
+            <div class="position-fixed bottom-0 bg-dark w-100 p-3" data-bs-theme="'dark">
+            <div class="row">
+                <div class="column col-3 d-flex p-3 align-items-center ">
+                    <img class="w-25 p" src="assets/imgs/main/image-10.jpg" alt="">
+                    <div class="p-3">
+                        <p class="text-light fw-semibold m-0 ">Artista</p>
+                        <p class="text-light m-0">Brano</p>
+                    </div>
+                    <i class="bi bi-heart text-success m-3"></i>
+                </div>
+                <div class="column col-6">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-flex flex-column justify-content-center mt-4">
+                            <i class="bi bi-shuffle text-light"></i>
+                            <i class="bi bi-dot text-white"></i>
+                        </div>
+                        <i class="bi bi-skip-start-fill text-light fs-3 ms-3"></i>
+                        <i class="bi bi-play-circle-fill text-light fs-1 m-3"></i>
+                        <i class="bi bi-skip-end-fill text-light fs-3 me-3"></i>
+
+                        <div class="d-flex flex-column justify-content-center mt-4">
+                            <i class="bi bi-repeat text-light"></i>
+                            <i class="bi bi-dot text-white"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-baseline">
+                        <p class="text-light me-3">0:00</p>
+                        <div class="progress w-50" role="progressbar" aria-label="Basic example" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+                        <div class="progress-bar" style="width: 15%;"></div>
+                        </div>
+                        <p class="text-light ms-3">3:20</p>
+                    </div>
+                </div>
+                <div class="column col-3">
+
+                    <i class="bi bi-border-width"></i>
+                    <i class="bi bi-speaker"></i>
+                    <i class="bi bi-volume-down"></i>
+
+                    <i class="bi bi-arrows-angle-expand"></i>
+                </div>
+            </div>
+            </div> 
         </nav>
     </main>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

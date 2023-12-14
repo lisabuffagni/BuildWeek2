@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"style.min.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/_sidebar.scss"],"names":[],"mappings":"AAAA,SACI,aACA","file":"style.min.css"}
