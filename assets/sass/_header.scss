@@ -7,7 +7,15 @@ a{
     text-decoration: none;
 }
 nav {
+    .lista-playlist{
+        height: 100%;
+    }
     li{
         margin-bottom: 0.5em;
+    }
+}
+@media screen and (max-width: 991px){
+    header{
+        display: block;
     }
 }

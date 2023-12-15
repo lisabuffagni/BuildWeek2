@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-.sidebar{height:100vh;width:30%}/*# sourceMappingURL=style.min.css.map */
-=======
-html,body,#body-container,#body-row{height:100%}a{color:#fff;text-decoration:none}nav li{margin-bottom:.5em}/*# sourceMappingURL=style.min.css.map */
->>>>>>> 6f409c7a813a0204f3533b4a17eb798b0d0f8e71
+html,body,#body-container,#body-row{height:100%}a{color:#fff;text-decoration:none}nav .lista-playlist{height:100%}nav li{margin-bottom:.5em}@media screen and (max-width: 991px){header{display:block}}.sidebar{height:100vh;width:30%}.sidebar .friend-card{font-size:.6em}#main,aside,.sidebar,.row-main,.container-main{height:100%}/*# sourceMappingURL=style.min.css.map */

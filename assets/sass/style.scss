@@ -1,2 +1,6 @@
 @import '_header';
 @import 'sidebar';
+
+#main, aside, .sidebar, .row-main, .container-main{
+    height: 100%;
+}

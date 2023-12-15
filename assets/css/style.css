@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-.sidebar {
-  height: 100vh;
-  width: 30%;
-=======
 html, body, #body-container, #body-row {
   height: 100%;
 }
@@ -12,7 +7,26 @@ a {
   text-decoration: none;
 }
 
+nav .lista-playlist {
+  height: 100%;
+}
 nav li {
   margin-bottom: 0.5em;
->>>>>>> 6f409c7a813a0204f3533b4a17eb798b0d0f8e71
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    display: block;
+  }
+}
+.sidebar {
+  height: 100vh;
+  width: 30%;
+}
+.sidebar .friend-card {
+  font-size: 0.6em;
+}
+
+#main, aside, .sidebar, .row-main, .container-main {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
