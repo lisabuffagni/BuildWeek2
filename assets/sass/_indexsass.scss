@@ -1,0 +1,71 @@
+
+//colori
+
+$black: rgb(24, 24, 24);
+$green: rgb(30, 215, 96);
+$white: rgb(255, 255, 255);
+
+html, body, #bodyContainer, #bodyRow {
+    height: 100%;
+  }
+
+body {
+  background: rgb(65,65,65);
+  background: radial-gradient(circle, rgb(40, 40, 40) 0%, rgba(1,1,1,1) 100%);
+}
+
+#sfumatura {
+  background: rgb(65,65,65);
+  background: radial-gradient(circle, rgb(40, 40, 40) 0%, rgba(1,1,1,1) 100%);
+
+}
+
+.bottoneVerde {
+  background-color: $green;
+  color: $black;
+  border: 1px solid $green;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  &:hover {
+    background: lighten($green, 20%);
+  }
+}
+
+
+.bottoneSalva {
+
+background-color: $black;
+color: $white;
+border: 1px solid $white;
+border-radius: 20px;
+margin-right: 20px;
+margin-left: 10px;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+.bottoneAnnunci {
+
+  background-color: $black;
+  color: gray;
+  border-radius: 15px;
+}
+
+
+#main_Container  {
+
+  width: fit-content;
+}
+
+.rowPics img {
+
+  width: 100%;
+  height: 100%;
+}
+
+
+  /*# sourceMappingURL=style.css.map */
