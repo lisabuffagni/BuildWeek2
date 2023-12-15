@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"version":3,"sourceRoot":"","sources":["../sass/_sidebar.scss"],"names":[],"mappings":"AAAA,SACI,aACA","file":"style.min.css"}
-=======
-{"version":3,"sourceRoot":"","sources":["../sass/_header.scss"],"names":[],"mappings":"AAAA,oCACI,YAGJ,EACI,WACA,qBAGA,OACI","file":"style.min.css"}
->>>>>>> 6f409c7a813a0204f3533b4a17eb798b0d0f8e71
+{"version":3,"sourceRoot":"","sources":["../sass/_header.scss","../sass/_sidebar.scss","../sass/_indexsass.scss","../sass/style.scss"],"names":[],"mappings":"AAAA,oCACI,YAGJ,EACI,WACA,qBAGA,oBACI,YAEJ,OACI,mBAGR,qCACI,OACI,eClBR,SACI,aACA,UACA,sBACI,eCGR,kCACI,YAGJ,KACE,mBACA,0EAGF,WACE,mBACA,0EAIF,cACE,iBAnBM,QAoBN,MArBM,QAsBN,yBACA,mBACA,kBACA,iBACA,kBACA,mBAEA,oBACE,mBAKJ,cAEA,iBArCQ,QAsCR,MApCQ,KAqCR,sBACA,mBACA,kBACA,iBACA,kBACA,mBAGA,gBAEE,iBAjDM,QAkDN,WACA,mBAIF,gBAEE,kBAGF,aAEE,WACA,YC9DF,+CACI","file":"style.min.css"}
