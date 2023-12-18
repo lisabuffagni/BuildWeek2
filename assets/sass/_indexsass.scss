@@ -24,19 +24,21 @@ html, body, #bodyContainer, #bodyRow {
   }
 
 @media screen and (min-width:769px) {
-    .mobile {
+    .mobileIndex {
         display: none;
     }
 }
 
 @media screen and (max-width:768px) {
-    .desktop {
+    .desktopIndex {
         display: none;
     }
 
-    .mobile {
-      background: rgb(66,66,66);
-      background: radial-gradient(circle, rgba(66,66,66,1) 0%, rgba(0,0,0,1) 100%);
+    .mobileIndex {
+      background-color: $black;
+      color: $white;
+    
+    
     }
 
     .card {
@@ -70,17 +72,11 @@ html, body, #bodyContainer, #bodyRow {
     }
 }
 
-body {
-  background: radial-gradient(circle, rgb(40, 40, 40) 0%, rgba(1,1,1,1) 100%);
+.desktopIndex {
+  background-color: rgb(24, 24, 24);
 }
 
-#sfumatura {
-  
-  background: radial-gradient(circle, rgb(40, 40, 40) 0%, rgba(1,1,1,1) 100%);
-
-}
-
-.bottoneVerde {
+.bottoneVerdee {
   background-color: $green;
   color: $black;
   border: 1px solid $green;
@@ -119,21 +115,12 @@ margin-bottom: 20px;
 }
 
 
-#main_Container  {
-
-  width: fit-content;
-}
-
 .rowPics img {
 
   width: 100%;
   height: 100%;
 }
 
-.mobile {
-
-  color: $white;
-}
 
 
   /*# sourceMappingURL=style.css.map */
