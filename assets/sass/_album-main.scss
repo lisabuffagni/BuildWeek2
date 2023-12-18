@@ -1,0 +1,89 @@
+section {
+    width: 100%;
+}
+
+.brani {
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 25%, rgba(60,51,46,1) 45%, rgba(113,97,55,1) 75%, rgba(161,139,63,1) 100%);
+    height: 40vw;
+    padding: 0 3vw 0 3vw;
+}
+
+.bannerAlbum {
+    background-color: #e5c551;
+    box-shadow: inset 0px -84px 82px 34px rgba(0,0,0,0.3);
+    background-size: cover;
+    height: 19vw;
+}
+
+.album {
+    box-shadow: 0px 0px 82px 34px rgba(0,0,0,0.2);
+    width: 12vw;
+    margin: 2vw 1vw 1vw 1.5vw;
+}
+
+main > section > div:nth-of-type(1) {
+    padding: 1vw 0 0 1vw;
+}
+
+.buttons {
+    width: 100%;
+}
+
+button {
+    opacity: 75%;
+    font-size: 1.2vw;
+    margin-right: 0.5vw;
+}
+
+button:hover {
+    opacity: 50%;
+}
+
+.profile {
+    width: 1.3vw;
+    padding-bottom: 0.3vw;
+
+}
+
+h2 {
+    font-size: 0.7vw;
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: 800;
+    height: 7vw;
+}
+
+.band {
+    width: 1.5vw;
+    padding-bottom: 0.3vw;
+}
+
+span {
+    opacity: 75%;
+}
+
+.title {
+    height: 11vw;
+}
+
+svg {
+    position: relative;
+    right: 1vw;
+}
+
+.iconeBrani {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
