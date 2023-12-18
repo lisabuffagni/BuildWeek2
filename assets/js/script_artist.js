@@ -26,15 +26,15 @@ function topTracksList(topTracks) {
     topTracks.forEach((t) => {
       let topTrack = document.createElement("div");
       topTrack.classList.add('row', 'align-items-center', 'justify-space-between', 'my-3', 'p-3')
-      topTrack.innerHTML=`<div class="col-1 col-lg-1 text-center">${(topTracks.indexOf(t)+1)}</div> 
-                            <div class="col-3 col-lg-1 "><img src="${t.album.cover_small}" alt="Album Cover" class="album-cover"></div>
-                            <div class="col-4 col-lg-4 fw-bold">${t.title}</div>
+      topTrack.innerHTML=`<div class="col-1 col-lg-1 text-center ">${(topTracks.indexOf(t)+1)}</div> 
+                            <div class="col-3 col-lg-3 "><img src="${t.album.cover_small}" alt="Album Cover" class="album-cover"></div>
+                            <div class="col-4 col-lg-4 fs-6">${t.title}</div>
                             <div class="col-1 col-lg-3 ">${t.rank.toLocaleString('us-US')}</div>
-                            <div class="col-lg-2 d-none d-xl-block">${Math.floor(t.duration/60)}:${(t.duration%60).toString().padStart(2, '0')}</div>`
+                            <div class="col-lg-1 d-none d-xl-block">${Math.floor(t.duration/60)}:${(t.duration%60).toString().padStart(2, '0')}</div>`
       topTracksList.appendChild(topTrack);
     });
 
-    topTracksList.appendChild(document.createElement("hr"));
+    
 }
 
 function loadMetaData (artist) {

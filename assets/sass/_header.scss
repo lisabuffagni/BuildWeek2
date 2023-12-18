@@ -14,8 +14,14 @@ nav {
         margin-bottom: 0.5em;
     }
 }
+header{
+    background-color: black;
+}
 @media screen and (max-width: 991px){
     header{
         display: block;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(0,0,0,0) 100%);
     }
 }
+ 
