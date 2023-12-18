@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script_artist.js"></script>
 </head>
 <body>
     <header>
@@ -27,7 +27,7 @@
         </nav>
     </header>
     <main >
-        <section class=" artist-banner position-relative">
+        <section class="artist-banner position-relative">
             <!-- banner artista -->
             <div class=" p-2">
                 <span class="btn text-light fs-3 ">&lt;</span> <span class="btn text-secondary fs-3">&gt;</span>
@@ -54,8 +54,8 @@
                   </svg> 
                   Artista verificato
                 </span>
-                <h1 class="display-1 fw-bold">Yellowcard</h1>
-                <p>3.433.158 ascoltatori mensili</p>
+                <h1 class="display-1 fw-bold artistName">Yellowcard</h1>
+                <p class="artistListener">3.433.158 ascoltatori mensili</p>
             </div>
             
         </section>
@@ -75,7 +75,7 @@
             
 
             <div class="row d-flex  flex-sm-column-reverse align-content-sm-center flex-md-row">
-                <div class=" col-md-7 col-sm-12 p-3 gap-3">
+                <div class=" col-md-7 col-sm-12 p-3 gap-3 topTracksList">
                     <h2 class=" mb-3 p-3">Popolari</h2>
 
                 <div class="row align-items-center justify-space-between my-3 p-3 ">
@@ -86,7 +86,7 @@
                   <div class="col-lg-2 d-none d-xl-block">3:18</div>
                 </div>
 
-                <div class="row align-items-center justify-space-between my-3 p-3 a">
+                <!-- <div class="row align-items-center justify-space-between my-3 p-3 a">
                     <div class="col-1 col-lg-1    text-center">2</div>
                     <div class="col-3 col-lg-1 "><img src="assets/imgs/main/image-17.jpg" alt="Album Cover" class="album-cover"></div>
                     
@@ -118,7 +118,7 @@
                     <div class="col-4 col-lg-4 fw-bold">Ocean Avenue</div>
                     <div class="col-1 col-lg-3 ">276,616,912</div>
                     <div class="col-lg-2 d-none d-xl-block">3:18</div>
-                  </div>
+                  </div> -->
                 
                 
 
@@ -146,7 +146,7 @@
                     <div >
                         <div class="position-relative">
                             
-                            <img src="assets/imgs/search/image-12.jpg" alt="User" class="rounded-circle" style="width: 100px;">
+                            <img src="assets/imgs/search/image-12.jpg" alt="User" class="rounded-circle artistIcon" style="width: 100px;">
                             <div class="position-absolute bg-success  rounded-circle heartIcon d-flex justify-content-center" style="width: 22px; height: 22px;">
                                 <i class="bi bi-heart-fill" ></i>
                             </div>
@@ -155,8 +155,8 @@
                     </div>
                     <div class="track-info my-4 mx-2">
                         <div class=" d-block d-md-none">Brani che ti piacciono</div>
-                        <span class="fw-bold fs-5">Hai messo Mi piace a 11 brani</span>
-                        <p class="mb-0 ">Di Yellowcard</p>
+                        <span class="fw-bold fs-5 likedTracksN">Hai messo Mi piace a 11 brani</span>
+                        <p class="mb-0  artistName">Di Yellowcard</p>
                     </div>
                 </div>
             </div>
