@@ -23,16 +23,10 @@ html, body, #bodyContainer, #bodyRow {
     src: url(../fonts/CircularStd-MediumItalic.otf);
   }
 
-@media screen and (min-width:769px) {
-    .mobileIndex {
-        display: none;
-    }
-}
+
 
 @media screen and (max-width:768px) {
-    .desktopIndex {
-        display: none;
-    }
+    
 
     
     .mobileIndex {
