@@ -9,7 +9,7 @@ section {
 .brani {
     background: rgb(0,0,0);
     background: linear-gradient(360deg, rgba(0,0,0,1) 25%, rgba(60,51,46,1) 45%, rgba(113,97,55,1) 75%, rgba(161,139,63,1) 100%);
-    height: 100%;
+    
     padding: 0 3vw 0 3vw;
 }
 
@@ -51,18 +51,17 @@ button:hover {
 }
 
 h2 {
-    font-size: 0.7vw;
+    font-size: 1rem;
 }
 
-h1 {
-    font-size: 7.5vw;
+.albumNome {
+    font-size: 3rem;
     font-weight: 800;
-    height: 10vw;
 }
 
 .band {
-    width: 1.5vw;
-    padding-bottom: 0.3vw;
+    width: 10%;
+    
 }
 
 span {

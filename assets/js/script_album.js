@@ -35,7 +35,7 @@ function createTrackList(tracks) {
 /*       p.innerText = (tracks.indexOf(u)+1) + "-" + u.title + " (" + Math.floor(u.duration/60) + ":" +  +")";
  */      div.appendChild(riga);
     });
-    div.appendChild(document.createElement("hr"));
+    
   }
 
 function loadMetaData (album) { //funzione che carica le info dell'album nel banner
