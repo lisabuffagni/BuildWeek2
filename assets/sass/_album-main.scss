@@ -2,10 +2,14 @@ section {
     width: 100%;
 }
 
+.buttons i, #verticalDots  {
+    display: none;
+}
+
 .brani {
     background: rgb(0,0,0);
     background: linear-gradient(360deg, rgba(0,0,0,1) 25%, rgba(60,51,46,1) 45%, rgba(113,97,55,1) 75%, rgba(161,139,63,1) 100%);
-    height: 40vw;
+    height: 100%;
     padding: 0 3vw 0 3vw;
 }
 
@@ -13,7 +17,7 @@ section {
     background-color: #e5c551;
     box-shadow: inset 0px -84px 82px 34px rgba(0,0,0,0.3);
     background-size: cover;
-    height: 19vw;
+    height: 26.5vw;
 }
 
 .album {
@@ -51,9 +55,9 @@ h2 {
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 7.5vw;
     font-weight: 800;
-    height: 7vw;
+    height: 10vw;
 }
 
 .band {
@@ -66,7 +70,7 @@ span {
 }
 
 .title {
-    height: 11vw;
+    height: 14vw;
 }
 
 svg {
@@ -77,8 +81,59 @@ svg {
 .iconeBrani {
     display: flex;
     align-items: center;
+    margin-bottom: 4vw;
 }
 
+.immagine {width: 17vw; margin: 3vw 2vw 0 2vw;}
+
+@media (max-width: 768px) { 
+    .immagine {
+        width: 50vw;
+    }
+
+    .buttons button, #legenda, #indice, #riproduzione, #durata, #spazio, hr, #horizontalDots  {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) and (min-width:320px) {
+    
+    .buttons i, #verticalDots  {
+        display: block;
+    }
+
+    .bannerAlbum {
+        height: 90vw;
+    }
+
+
+    .albumTitle {
+        font-size: 1rem;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    #play {
+        position: relative;
+        left: 58%;
+
+    }
+
+    .iconeBrani {
+        position: relative;
+        right: 43vw;
+        margin-bottom: 1vw;
+    }
+
+    .brani {
+        background: rgb(0,0,0);
+        background: linear-gradient(360deg, rgba(0,0,0,1) 34%, rgba(29,25,22,1) 46%, rgba(60,51,46,1) 61%, rgba(84,72,50,1) 75%, rgba(113,97,55,1) 86%, rgba(161,139,63,1) 100%);
+    }
+}
 
 
 

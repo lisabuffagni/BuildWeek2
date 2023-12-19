@@ -26,13 +26,12 @@
         </nav>
     </header>
 
-    <div class="row">
-        <div class="col-4 bg-black"></div>
-    
         <main class="">
             <section class="bannerAlbum container-fluid">
                 <!-- banner dell'album -->
-                <div class=".buttons w-auto d-flex justify-content-between">
+                <div class="buttons w-auto d-flex justify-content-between">
+                    <i class="bi bi-arrow-left-short  fs-2"><a href=""></a></i>
+
                     <div class="font-monospace d-flex align-items-center">
                         <button type="button" class="btn btn-dark bg-dark text-white rounded-5">&lt;</button>
                         <button type="button" class="btn btn-dark bg-dark text-white rounded-5">&gt;</button>
@@ -48,7 +47,10 @@
                 </div>
 
                 <div class="d-flex align-items-end">
-                    <img src="assets/imgs/main/image-1.jpg" alt="album" class="albumCover">
+                    <img src="assets/imgs/main/image-1.jpg" alt="album" id="album" class="albumCover  immagine" >
+                      
+                    
+
 
                     <div class="title">
                         <h2 class="text-uppercase">Album</h2>
@@ -67,10 +69,12 @@
                 
             </section>
 
-            <section class="brani">
+            <section class="brani 
+            
+            ">
                 <!-- lista dei brani con bottoni -->
-                <div class="icons p-0 pt-4 pb-5 d-flex">
-                    <div class="play text-success">
+                <div class="icons p-0 pt-4 d-flex">
+                    <div id="play" class="play text-success">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-play-circle-fill " viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
                         </svg>
@@ -78,33 +82,22 @@
                     <div class="iconeBrani">
                         <i class="bi bi-heart fs-2 ps-4"></i>
                         <i class="bi bi-arrow-down-circle fs-2 ps-4"></i>
-                        <i class="bi bi-three-dots fs-2 ps-4"></i>
+                        <i id="horizontalDots" class="bi bi-three-dots fs-2 ps-4"></i>
+                        <i id="verticalDots" class="bi bi-three-dots-vertical fs-2 ps-4"></i>
                     </div>
                 </div>
 
                 <div class="albumTrackList">
-                    <div class="row pt-1 pb-1 object-fit-lg-contain text-uppercase">
-                        <div class="col-1 opacity-75">#</div>
-                        <div class="col-6 opacity-75">Titolo</div>
-                        <div class="col-1 opacity-75 d-flex flex-row-reverse"><div>Riproduzione</div></div>
-                        <div class="col-3 opacity-75"></div>
-                        <div class="col-1 opacity-75 d-flex flex-row-reverse"><i class="bi bi-clock"></i></div>
+                    <div id="legenda" class="row pt-1 pb-1 object-fit-contain text-uppercase">
+                        <div class="col-sm-none col-md-1 opacity-75">#</div>
+                        <div class="col-sm-12 col-md-6 opacity-75">Titolo</div>
+                        <div class="col-sm-none col-md-2 opacity-75 d-flex flex-row-reverse"><div class="">Riproduzione</div></div>
+                        <div class="col-sm-none col-md-2 opacity-75"></div>
+                        <div class="col-sm-none col-md-1 opacity-75 d-flex flex-row-reverse"><i class="bi bi-clock"></i></div>
+                        <div class="col-sm-1 col-md-none opacity-75 d-flex flex-row-reverse"><i class="bi bi-three-dots-vertical"></i></div>
                     </div>
                     <hr>
-                    <div class="row pt-1 pb-1 object-fit-lg-contain">
-                        <div class="col-1 opacity-75 d-flex align-items-center">
-                            <div class="fs-4">1</div>
-                        </div>
-                        <div class="col-6">
-                            <div>
-                                <p class="m-0 p-0 opacity-100 fw-semibold">Che ne so</p>
-                                <p class="opacity-75 m-0 p-0 opacity-75">Pinguini Tattici Nucleari</p>
-                            </div>
-                        </div>
-                        <div class="col-1 opacity-75 d-flex flex-row-reverse"><div>5.000</div></div>
-                        <div class="col-3 opacity-75"></div>
-                        <div class="col-1 opacity-75 d-flex flex-row-reverse"><div>5 min</div></div>
-                    </div>
+                    
                 </div>
             </section> 
             <section>
@@ -120,8 +113,6 @@
             </nav>
         </main>
 
-        <div class="col-4 bg-black"></div>
-    </div>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

@@ -19,19 +19,19 @@ function createTrackList(tracks) {
     console.log(div)
     tracks.forEach((t) => {
       let riga = document.createElement("div");
-      riga.classList.add('row', 'pt-1', 'pb-1', 'object-fit-lg-contain')
-      riga.innerHTML=`<div class="col-1 opacity-75 d-flex align-items-center">
-                        <div class="fs-4">${(tracks.indexOf(t)+1)}</div>
+      riga.classList.add('row', 'pt-1', 'pb-1', 'object-fit-lg-contain', 'd-flex')
+      riga.innerHTML=`<div class=" opacity-75 d-flex">
+                        <div id="indice" class=" col-sm-none col-md-1 fs-4 ">${(tracks.indexOf(t)+1)}</div>
                       </div>
-                      <div class="col-6">
+                      <div class="col-sm-11 col-md-6">
                           <div>
                               <p class="m-0 p-0 opacity-100 fw-semibold">${t.title}</p>
                               <p class="opacity-75 m-0 p-0 opacity-75">${t.artist.name}</p>
                           </div>
                       </div>
-                      <div class="col-1 opacity-75 d-flex flex-row-reverse"><div>${t.rank.toLocaleString('us-US')}</div></div>
-                      <div class="col-3 opacity-75"></div>
-                      <div class="col-1 opacity-75 d-flex flex-row-reverse"><div>${Math.floor(t.duration/60)}:${(t.duration%60).toString().padStart(2, '0')}</div></div>
+                      <div class="col-sm-none col-md-2 opacity-75 d-flex flex-row-reverse"><div id="riproduzione">${t.rank.toLocaleString('us-US')}</div></div>
+                      <div class=" col-sm-none col-md-2 opacity-75" id="spazio"></div>
+                      <div class=" col-sm-1 col-md-1 opacity-75 d-flex flex-row-reverse"><div id="durata">${Math.floor(t.duration/60)}:${(t.duration%60).toString().padStart(2, '0')}</div></div>
                       </div>`
 /*       p.innerText = (tracks.indexOf(u)+1) + "-" + u.title + " (" + Math.floor(u.duration/60) + ":" +  +")";
  */      div.appendChild(riga);
