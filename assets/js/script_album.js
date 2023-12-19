@@ -1,9 +1,8 @@
-
-/* let albumID= sessionStorage.getItem('idalbum')
-sessionStorage.clear()
+let albumID= sessionStorage.getItem('idAlbum')
 console.log(albumID)
-let urlAlbum= `https://striveschool-api.herokuapp.com/api/deezer/album/${albumID}` */
-let urlAlbum= `https://striveschool-api.herokuapp.com/api/deezer/album/75621062`
+/* sessionStorage.clear() */
+let urlAlbum= `https://striveschool-api.herokuapp.com/api/deezer/album/${albumID}`
+/* let urlAlbum= `https://striveschool-api.herokuapp.com/api/deezer/album/75621062` */
 async function getAlbum() {
  let albumData= await fetch(urlAlbum).then(response => response.json()) //chiamata GET, response trasformata in JSON e inserita nell'array0
     console.log(albumData)
@@ -43,7 +42,7 @@ function loadMetaData (album) { //funzione che carica le info dell'album nel ban
     let albumCover= document.querySelector('.albumCover') // copertina album
     albumCover.setAttribute('src', `${album.cover}` )
     let albumTitle= document.querySelector('.albumTitle') // titolo album
-   /*  albumTitle.innerText=album.title */ 
+    albumTitle.innerText=album.title 
     let albumArtistIcon=document.querySelector('.albumArtistIcon') //icona artista
     albumArtistIcon.setAttribute('src', `${album.artist.picture_small}`)
 
@@ -73,21 +72,21 @@ addEventListener('DOMContentLoaded', () => {
 
 
 // al caricamento della pagina, seleziona gli album correlati e permette il link
-addEventListener('DOMContentLoaded', () => {
+/* addEventListener('DOMContentLoaded', () => {
   let albums= document.querySelectorAll(".albumName")
 console.log(albums)
 
 albums.forEach(alb => {
   alb.addEventListener('click', (evt) => {
-      //dal click sul nome dell'album risalgo all'ID che viene salvato nel SessionStorage e viene usato nel fetch per scaricare le info
-      sessionStorage.clear()
+      
+     sessionStorage.clear() 
       console.log(evt.target)
       console.log(evt.target.attributes[0].nodeValue)
       sessionStorage.setItem('idalbum', evt.target.attributes[0].nodeValue)
       })
 })
 })
-
+ */
 
 
     

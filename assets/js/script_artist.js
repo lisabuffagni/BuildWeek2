@@ -1,7 +1,7 @@
-/* let artistID= sessionStorage.getItem('idartist')
-sessionStorage.clear()
-console.log(artistID) */
-let urlArtist= /* `https://striveschool-api.herokuapp.com/api/deezer/album/${artistID}` */  'https://striveschool-api.herokuapp.com/api/deezer/artist/412'
+let artistID= sessionStorage.getItem('idArtist')
+
+console.log(artistID) 
+let urlArtist=`https://striveschool-api.herokuapp.com/api/deezer/artist/${artistID}`  /* 'https://striveschool-api.herokuapp.com/api/deezer/artist/412' */
 
  /* closeFaBtn.addEventListener('click', () => sidebar.classList.add('d-none')) */
 async function getArtist() {
@@ -18,7 +18,7 @@ async function getArtist() {
     /* createList(topTrack.data)  */
 
 }
-
+/* sessionStorage.clear() */
 getArtist()
 
 function topTracksList(topTracks) {
